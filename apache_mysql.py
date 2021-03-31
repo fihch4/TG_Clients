@@ -1,7 +1,6 @@
 #!/usr/bin/python3.8
 
 import mysql.connector
-from config import *
 
 
 class MySQLi:
@@ -58,7 +57,4 @@ class MySQLi:
     def __del__(self):
         if self._connection != None and self._connection.is_connected():
             self._connection.close()
-
-
-
 #
